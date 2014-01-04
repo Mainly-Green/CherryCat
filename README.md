@@ -4,6 +4,4 @@ CherryCat
 Private Torrent Tracker
 
 
-Nginx+MYSQL
-
-soomethingithng
+Obv nothing of this is even done yet.
