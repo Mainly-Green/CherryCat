@@ -40,4 +40,15 @@ function login ($email, $pass) {
                 header('Location: ../login/index.html#fail');
   
 	}
+
+// Function totally not done at all
+function upload ($torrent, $name, $desc, $tags){
+        global $db;
+        $do = $db->prepare("INSERT INTO torrents (torrent, name, desc, tags) VALUES (:torrent, :name, :desc, :tags)");
+        $do->bindParam('torrent', $torrent);
+        $do->bindParam('name', $name);
+        $do->bindParam('desc', $desc);
+        $do->bindParam('tags', $tags);
+        $do->execute();
+}
 ?>
